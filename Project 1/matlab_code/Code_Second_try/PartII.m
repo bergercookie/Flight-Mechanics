@@ -17,8 +17,6 @@ global g
 
 % parameters_partI
 fuel_percent = 1;
-gamma = 0;
-gamma_rad = to_rad(gamma);
 
 % Initialize data structures
 
@@ -39,7 +37,7 @@ mach_req = 1.5;
 %% Flight Simulation
 
 t_s = 0;
-t_f = 10; %how much will the duration last
+t_f = 1000; %how much will the duration last
 t_span = [t_s, t_f];
 
 v0 = 100; %initial velocity

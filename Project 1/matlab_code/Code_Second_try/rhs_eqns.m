@@ -27,8 +27,8 @@ xtp=xtpcal(rmfuel);
 eta=eta+(xtp-xtpref)*dxeta;
 
 %% Gamma Function
-% gamma = gamma_func(t); %todo
-gamma = 0;
+gamma = gamma_fun(t); %todo
+% gamma = 0;
 
 %% Solving for alfa
 alfa = find_a(T, m, gamma); alfadeg = to_degrees(alfa);
