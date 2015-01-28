@@ -1,0 +1,26 @@
+function [y_out] = rhs_eqns(t, y)
+
+global tepsr g
+global iebk
+
+% "Proper" Variable Naming
+v = y(1); h = y(2); m = y(3);
+h_km = h / 1000; %altitude in km
+
+[rho,aspeed,temp,press] = stdatm(h) %given altitude compute these properties
+mach = v / aspeed;
+[T,b]=rm6cal(mach,h_km,iebk); %compute thrust and fuel burn
+gamma = 0;
+
+% gamma = gamma_func(t); %todo
+
+% Equations
+
+% need a, gamma
+y_calc = zeros(3,1);
+y_calc(1) = (T * cos(a + tepsr) - D - m*g*sin(gamma)) / m;
+y_calc(2) = v * sin(gamma);
+y_calc(3) = - b;
+
+y_out = y_calc;
+end
