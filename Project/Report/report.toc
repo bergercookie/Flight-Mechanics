@@ -1,0 +1,11 @@
+\contentsline {section}{\numberline {1}Abstract}{2}
+\contentsline {section}{\numberline {2}Introduction}{2}
+\contentsline {section}{\numberline {3}Static Perfomance}{2}
+\contentsline {subsection}{\numberline {3.1}Excess Thrust}{2}
+\contentsline {subsection}{\numberline {3.2}SEP Graph}{4}
+\contentsline {subsection}{\numberline {3.3}Maximum altitude - Maximum Mach Number}{5}
+\contentsline {section}{\numberline {4}Minimum time to climb}{5}
+\contentsline {subsection}{\numberline {4.1}Computing $\gamma (t)$ - minimum time for Mach = 1.5 \& h = 1.1km}{6}
+\contentsline {subsection}{\numberline {4.2}Trajectory for maximum Mach number in minimum time}{7}
+\contentsline {subsection}{\numberline {4.3}Trajectory for maximum altitude in minimum time}{8}
+\contentsline {section}{References}{9}
