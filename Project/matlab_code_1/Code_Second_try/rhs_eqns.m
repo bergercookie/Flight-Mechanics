@@ -29,7 +29,8 @@ eta=eta+(xtp-xtpref)*dxeta;
 
 
 %% Gamma function
-gamma = gamma_fun_2(t);
+gamma = gamma_fun(t);
+% gamma = gamma_fun_2(t);
 
 
 %% Solving for alfa

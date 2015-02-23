@@ -112,17 +112,18 @@ figure(3); clf()
 subplot(3,4,1:3)
 hold on
 grid on
-title('Airplane velocity [m/s]');
+title('Airplane velocity [m/s]', 'FontSize', 14);
 plot(t_sim, vspeed_req_1, 'g', 'LineWidth', 2);
 plot(t_sim, v, 'b')
-legend('Mach = 1.5', 'Velocity');
+h_legend = legend('Mach = 1.5', 'Velocity');
+set(h_legend, 'FontSize', 14);
 
 
 % Altitude plot
 subplot(3,4,5:7)
 hold on
 grid on
-title('Altitude [km]');
+title('Altitude [km]', 'FontSize', 14);
 plot(t_span, [alt_req_1, alt_req_1], 'g', 'LineWidth', 2)
 plot(t_sim, h, 'm')
 
@@ -130,7 +131,7 @@ plot(t_sim, h, 'm')
 subplot(3,4,9:11)
 hold on
 grid on
-title('Fuel Remaining[kg]');
+title('Fuel Remaining[kg]', 'FontSize', 14);
 plot(t_span, [fuel_req, fuel_req], 'r', 'LineWidth', 2)
 plot(t_sim, rem_fuel, 'g')
 
@@ -138,7 +139,7 @@ plot(t_sim, rem_fuel, 'g')
 subplot(3,4,[4 8 12])
 hold on
 grid on
-title('\gamma (t)');
+title('\gamma (t)', 'FontSize', 14);
 t_range = linspace(t_span(1), t_span(2), 1000);
 plot(t_range, arrayfun(@gamma_fun, t_range));
 
@@ -153,9 +154,10 @@ end
 
 curve_in_sep = plot(mach, h, 'm', 'LineWidth', 1.5);
 if exist('qdyn_lim2', 'var') && exist('alfa_lim2', 'var')
-    legend([alfa_lim2, qdyn_lim2, curve_in_sep], {'Angle of attack < 15 degrees', ...
+    h_legend = legend([alfa_lim2, qdyn_lim2, curve_in_sep], {'Angle of attack < 15 degrees', ...
         'Max Dynamic Pressure', ...
         'Airplane Trajectory'});
+    set(h_legend, 'FontSize', 14);
     
     text1 = sprintf('\t v = %.2f m/s, mach = %.2f\n\t Alt = %.2f km\n\t Fuel Rem = %.2f m_{req}\n\t Xe = %.2f km\n Sim.Time = %.2f s', ...
     v_final, mach_final, alt_final, fuel_final/fuel_req, xe_f*10^(-3), t_f);
@@ -163,7 +165,7 @@ if exist('qdyn_lim2', 'var') && exist('alfa_lim2', 'var')
     annotation('textbox',...
     [0.13 0.74 0.19 0.19],...
     'String', text1,...
-    'FontSize',14,...
+    'FontSize',16,...
     'FontName','Arial',...
     'LineStyle','--',...
     'EdgeColor',[1 1 0],...

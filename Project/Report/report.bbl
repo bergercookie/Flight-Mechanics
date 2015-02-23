@@ -2,7 +2,13 @@
 
 \bibitem{dorr_aerofax_1987}
 Robert Dorr, Rene Francillon, and Jay Miller.
-\newblock {\em Aerofax Minigraph 12, Saab J35 Draken}.
+\newblock {\em Aerofax {Minigraph} 12, {Saab} {J}35 {Draken}}.
 \newblock Aerofax Inc., 1987.
+
+\bibitem{etkin_dynamics_1972}
+Bernanrd Etkin.
+\newblock {\em Dynamics of {Atmospheric} {Flight}}.
+\newblock John Wiley \& Sons, Inc, Toronto, Canada, 1972.
+\newblock 00000.
 
 \end{thebibliography}

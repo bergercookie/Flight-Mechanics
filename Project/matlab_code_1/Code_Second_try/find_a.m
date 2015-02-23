@@ -11,7 +11,8 @@ qdyn = evalin('caller', 'qdyn');
 init_estimation = to_rad(3); %3 degrees initial aoa estimation
 L = @(a) qdyn*sref*cla*(to_degrees(a)-ca0);
 eqn_a = @(a) T*sin(a + tepsr) + L(a) - m*g*cos(gamma);
-a_found = fzero(eqn_a, init_estimation);
+options = optimset('Display','off'); % suppress lsqcurvefit output
+a_found = fzero(eqn_a, init_estimation, options);
 
 out = a_found;
 end

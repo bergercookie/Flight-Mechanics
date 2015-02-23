@@ -1,0 +1,86 @@
+\section{Derivation of $C_{l}$ rolling moment coefficient}
+In this part of the project the rolling moment coefficient of the J35 Draken is to be calculated.
+For the simulation, the model of figure %todo
+was used:
+% insert figure of the model %todo
+
+The major problem of the model is the \textit{absence of the fin}. This difference to the 
+real model eventually caused considerable divergence between the values computed during the 
+simulation and the data extracted from Draken data diagramms provided.
+
+\subsection{Mathematical Modelling}
+In order to proceed with the analysis and the computation of $C_{lp}, C_{l\beta} parameters$, 
+a valid mathematical model needs to be derived first. 
+If I implement the Newton's second law for the rolling movement
+I can derive equation \ref{eqn:newton_angular}.
+
+\begin{equation}
+    \Sigma T = I_{xx}\ddot{\phi} \Rightarrow 
+    L - C\dot{\phi} - k\phi = I_{xx}\ddot{\phi},
+    \label{eqn:newton_angular}
+\end{equation}
+
+\noindent where $C\dot{\phi}$ is the moment exerted due to the (mechanical) damping and $k\phi$ is
+the moment due to the (mechanical) spring stiffness of the device holding the airplane during the simulation.
+For the calculation of the rolling moment the following equations can be used:
+\begin{eqnarray}
+    L &=& C_l q b S \label{eqn:roll_moment} \label{eqn:L}\\
+    C_l &=&  C_{lp}\frac{pb}{2u} + C_{l\beta}\beta \label{eqn:cl}\\
+    p &=&\dot{\phi} \notag\\
+    q &=&  \frac{1}{2}\rho v^2 \notag
+\end{eqnarray}
+
+A sufficient model of calculating $C_l$ - the rolling moment coefficient - is given in equation
+\ref{eqn:cl}. According to this, $C_l$ is a function of $C_{lp}$ the \textit{damping-in-roll}
+coefficient and $C_{l\beta}$ the dihedral effect.
+$C_{lp}$ expresses the resistance of the airplane to rolling 
+\cite{etkin_dynamics_1972}, while $C_{l\beta}$ expresses the change in rolling moment 
+coefficient per degree of change in the sideslip angle $\beta$. A sufficient relation to 
+calculating $\beta$ can be the following:
+\begin{equation}
+    \beta = \alpha \phi
+    \label{eqn:beta}
+\end{equation}
+
+If I now substitute the expression of rolling moment \ref{eqn:L} into the initial equation
+\ref{eqn:newton_angular}, and move all the $\phi, \dot{\phi}$ terms to the left side of equation
+I can end up with the following second order differential equation:
+
+\begin{equation}
+    I_{xx}\ddot{\phi} + \dot{\phi}\big(C_{mech} - \frac{C_{lp}Sb^2q}{2u}\big) + \big(k - C{l\beta}aqbS\big)\phi = 0
+    \label{eqn:ode_used}
+\end{equation}
+
+The analytical solution of \ref{eqn:ode_used} for the general case of complex roots
+(which is what I expect due to the oscillatory behavior of the model movement) is the following:
+
+\begin{eqnarray}
+    \phi &=&  c_1e^{\alpha' x}cos(\beta' x) + c_2e^{\alpha' x} sin(\beta' x) \label{eqn:phianal}\\
+    \alpha' &=&  -\frac{\beta}{2\alpha} \notag\\
+    \beta' &=&  \frac{\sqrt{4ac - b^2}}{2a} \notag\\
+\end{eqnarray}
+
+where $\alpha, \beta, c$ are the coefficients of \ref{eqn:ode_used} respectively:
+\begin{eqnarray}
+    \alpha &=& I_{xx} \notag\\
+    \beta &=&  C_{mech} - \frac{C_{lp}Sb^2q}{2u} \notag\\
+    c &=&  k - C{l\beta}aqbS \notag
+\end{eqnarray}
+
+\noindent In order to get the analytical solution of the roll rate $\dot{\phi}$ I take the derivative 
+of \ref{eqn:phianal}:
+
+\begin{equation}
+    \dot{\phi} =  \big(-C_1 \beta' sin(\beta' x) + C_2 \beta' cos(\beta' x) \big) e^{\alpha' x}
+    \label{eqn:panal}
+\end{equation}
+
+\subsection{Derivation of \textit{damping-in-roll} derivative $C_{lp}$}
+
+In order to derive the $C_{lp}$ parameter, I first need to extract information out of 
+the experimental data gathered. The oscillation of the rolling motion can be modelled as a 
+decaying sinusoidal function of time. Therefore I can fit an exponential sinusoidal function 
+of the form $Ae^{nt}sin(\omega t + \phi)$ in the data and estimate each parameter 
+by using the least squares method.
+
+\subsection{Derivation of the \textit{Dihedral effect} $C{l\beta}$}

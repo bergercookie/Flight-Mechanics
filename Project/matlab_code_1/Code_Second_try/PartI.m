@@ -8,17 +8,18 @@
 
 clearvars
 
+%% Global variables definitions
 global sref tepsr xtpref xtpfpl rmfpl rmfull qmax
 global rmfuel iebk
 global g
 global qdyn_max qdyn_index qdyn_mach qdyn_alt qdyn_tex
 
-% parameters_partI
+%% parameters_partI
 fuel_percent = 0.3;
 gamma = 0;
 gamma_rad = to_rad(gamma);
 
-% Initialize data structures
+%% Initialize data structures
 
 initfpl35
 initrm6
@@ -29,11 +30,12 @@ iebk=1;            % Engine at full afterburner
 rmfuel=fuel_percent*rmfull; % Fuel tank is 60% full
 mass=rmfpl+rmfuel;  % Total mass of aircraft [kg]
 
+%% Basic Structures Initialization
 % Store everything in an array of structs
 % Each struct shall contain the current altitude and 3 arrays
 % corresponding to the excess thrusts [Tex], the specific excess powers [Sep] 
 % and the aoa angles calculated for the given mach nums array
-alt_range = 0:1:16;
+alt_range = 0:1:17;
 mach_range = linspace(0, 2, 30); % same for all curves
 
 % limits configuration 
@@ -105,10 +107,9 @@ end
 h2 = plot(mach_range, curves(length(curves)).thrusts, plot_config{length(curves)}, 'LineWidth', 2);
 
 grid on
-ylabel('Excess Thrust [N]');
-xlabel('Mach');
-limsy=get(gca,'YLim');
-set(gca,'Ylim',[0, limsy(2)]);
+ylabel('Excess Thrust [N]', 'FontSize', 14);
+xlabel('Mach', 'FontSize', 14);
+set(gca,'Ylim',[-2000, 0.6*10^5]);
 
 powers_2dmat = zeros(length(curves), length(mach_range));
 energy_2dmat = zeros(length(curves), length(mach_range));
@@ -122,9 +123,9 @@ hold on
 % plotting the contour + label for each curve
 [C,h] = contour(mach_range, alt_range, powers_2dmat, 0:5:200);
 clabel(C, h);
-title(sprintf('Specific Excess Power'));
-ylabel('Altitude [km]');
-xlabel('Mach');
+title(sprintf('Specific Excess Power'), 'FontSize', 14);
+ylabel('Altitude [km]', 'FontSize', 14);
+xlabel('Mach', 'FontSize', 14);
 grid on
 
 %% Envelope limits calculations
@@ -179,13 +180,16 @@ h1_text = strcat('altitude = ', num2str(curves(1).alt), 'km');
 h2_text = strcat('altitude = ', num2str(curves(length(curves)).alt), 'km');
 h3_text = 'Angle of attack < 15 degrees';
 h4_text = 'Max Dynamic Pressure';
-legend([h1, h2, alfa_lim1, qdyn_lim1], {h1_text, h2_text, h3_text, h4_text});
+h_legend = legend([h1, h2, alfa_lim1, qdyn_lim1], {h1_text, h2_text, h3_text, h4_text});
+set(h_legend,'FontSize',14);
 
 figure(2);
 hold on
 alfa_lim2 = plot(x_range_alfa, f2_alfa, 'r', 'LineWidth', 2);
 % qdyn_lim2 = plot(qdyn_mach2_filt, qdyn_alt2_filt, 'bx', 'LineWidth', 2);
 qdyn_lim2 = plot(x_range_qdyn, f2_qdyn, 'b', 'LineWidth', 2);
-legend([alfa_lim2, qdyn_lim2], {'Angle of attack < 15 degrees', 'Max Dynamic Pressure'});
+h_legend = legend([alfa_lim2, qdyn_lim2], {'Angle of attack < 15 degrees', ...
+    'Max Dynamic Pressure'});
+set(h_legend,'FontSize',14);
 limsy=get(gca,'YLim');
 set(gca,'Ylim',[0, limsy(2)])
