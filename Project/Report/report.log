@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014/MacPorts 2014_6) (preloaded format=xelatex 2015.2.9)  21 FEB 2015 02:12
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014/MacPorts 2014_6) (preloaded format=xelatex 2015.2.9)  28 FEB 2015 14:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,8 +8,8 @@ LaTeX2e <2014/05/01>
 Babel <3.9k> and hyphenation patterns for 43 languages loaded.
 (/opt/local/share/texmf-texlive/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/opt/local/share/texmf-texlive/tex/latex/base/size12.clo
-File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+(/opt/local/share/texmf-texlive/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count80
 \c@section=\count81
@@ -1108,7 +1108,14 @@ Package csquotes Info: ... none found.
 LaTeX Warning: Unused global option(s):
     [parindent=0].
 
-(./report.aux)
+(./report.aux
+
+LaTeX Warning: Label `eqn:panal' multiply defined.
+
+
+LaTeX Warning: Label `eqn:panal' multiply defined.
+
+)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 162.
@@ -1276,12 +1283,12 @@ LaTeX Info: Redefining \selectfont on input line 126.
 * \topmargin=-38.1381pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=12.0pt
+* \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=44.0pt
-* \marginparsep=10.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -1292,32 +1299,29 @@ LaTeX Info: Redefining \selectfont on input line 126.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (./titlepage.tex
-File: ./Drawings/MoreFigures/kth_rgb.jpg Graphic file (type QTm)
- <use  "./Drawings/MoreFigures/kth_rgb.jpg" >
 File: ./Drawings/Figures/S35F.png Graphic file (type QTm)
-
-<use  "./Drawings/Figures/S35F.png" > [1
-
-]) (./report.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 4.
+ <use  "./Drawings/Figures/S35F.png" >
+LaTeX Font Info:    Try loading font information for U+msa on input line 29.
 
 (/opt/local/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 4.
+LaTeX Font Info:    Try loading font information for U+msb on input line 29.
 
 (/opt/local/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for TS1+PalatinoLinotype(0) on
- input line 4.
-LaTeX Font Info:    No file TS1PalatinoLinotype(0).fd. on input line 4.
+ input line 29.
+LaTeX Font Info:    No file TS1PalatinoLinotype(0).fd. on input line 29.
 
 
 LaTeX Font Warning: Font shape `TS1/PalatinoLinotype(0)/m/n' undefined
-(Font)              using `TS1/cmr/m/n' instead on input line 4.
+(Font)              using `TS1/cmr/m/n' instead on input line 29.
 
-)
+[1
+
+]) (./report.toc)
 \tf@toc=\write3
 \openout3 = `report.toc'.
 
@@ -1328,165 +1332,226 @@ LaTeX Font Warning: Font shape `TS1/PalatinoLinotype(0)/m/n' undefined
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 27.52777pt.
+ Make it at least 22.83148pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[1] (./abstract.tex
-Overfull \hbox (1.84734pt too wide) in paragraph at lines 2--5
-\EU1/PalatinoLinotype(0)/m/n/12 This is the report for the performance analysis
- project in the \EU1/PalatinoLinotype(0)/m/it/12 Flight Mechanics \EU1/Palatino
-Linotype(0)/m/n/12 course
- []
-
-) (./intro_reloaded.tex) (./general_performance.tex (./static_performance.tex
+[1] (./abstract.tex) (./intro_reloaded.tex) (./general_performance.tex
+(./static_performance.tex
 File: ./Drawings/MatlabFigures/Tex_Graph.eps Graphic file (type eps)
-
-<./Drawings/MatlabFigures/Tex_Graph.eps>
-Overfull \hbox (30.45146pt too wide) in paragraph at lines 9--11
+ <./Drawings/MatlabFigures/Tex_Graph.eps>
+Overfull \hbox (30.11813pt too wide) in paragraph at lines 9--11
  []|  [] 
  []
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 27.52777pt.
+ Make it at least 22.83148pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [2]
 File: ./Drawings/MatlabFigures/Tex_Graph2.eps Graphic file (type eps)
  <./Drawings/MatlabFigures/Tex_Graph2.eps>
-Overfull \hbox (30.45146pt too wide) in paragraph at lines 22--24
+Overfull \hbox (30.11813pt too wide) in paragraph at lines 22--24
  []|  [] 
  []
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 27.52777pt.
+ Make it at least 22.83148pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [3]
 File: ./Drawings/MatlabFigures/SEP_Graph.eps Graphic file (type eps)
  <./Drawings/MatlabFigures/SEP_Graph.eps>
-Overfull \hbox (30.45146pt too wide) in paragraph at lines 38--40
+Overfull \hbox (30.11813pt too wide) in paragraph at lines 38--40
  []|  [] 
  []
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 27.52777pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[4]
-LaTeX Font Info:    Calculating math sizes for size <8.39996> on input line 48.
+LaTeX Font Info:    Calculating math sizes for size <6.99997> on input line 48.
 
 
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.19998> not available
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <3.49998> not available
 (Font)              size <5> substituted on input line 48.
 
 
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.19998> not available
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <3.49998> not available
 (Font)              size <5> substituted on input line 48.
 
 
-LaTeX Font Warning: Font shape `TS1/PalatinoLinotype(0)/m/n' in size <4.19998> 
+LaTeX Font Warning: Font shape `TS1/PalatinoLinotype(0)/m/n' in size <3.49998> 
 not available
 (Font)              size <5> substituted on input line 48.
 
 
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.19998> not available
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <3.49998> not available
 (Font)              size <5> substituted on input line 48.
 
 ) (./minimum_time.tex
 
-LaTeX Warning: Reference `sec:m15h11' on page 5 undefined on input line 9.
+LaTeX Warning: Reference `sec:m15h11' on page 4 undefined on input line 9.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 27.52777pt.
+ Make it at least 22.83148pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5]
+[4]
 File: ./Drawings/MatlabFigures/mach15alt11.eps Graphic file (type eps)
  <./Drawings/MatlabFigures/mach15alt11.eps>
-Overfull \hbox (30.45146pt too wide) in paragraph at lines 16--18
+Overfull \hbox (30.11813pt too wide) in paragraph at lines 16--18
  []|  [] 
  []
 
 File: ./Drawings/MatlabFigures/mach15alt11_2.eps Graphic file (type eps)
 <./Drawings/MatlabFigures/mach15alt11_2.eps>
-Overfull \hbox (30.45146pt too wide) in paragraph at lines 24--26
+Overfull \hbox (30.11813pt too wide) in paragraph at lines 24--26
  []|  [] 
  []
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 27.52777pt.
+ Make it at least 22.83148pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6]
+[5]
 
-LaTeX Warning: Reference `sec:m15h11' on page 7 undefined on input line 39.
+LaTeX Warning: Reference `sec:m15h11' on page 6 undefined on input line 39.
 
 File: ./Drawings/MatlabFigures/max_mach.eps Graphic file (type eps)
 <./Drawings/MatlabFigures/max_mach.eps>
-Overfull \hbox (30.45146pt too wide) in paragraph at lines 43--45
+Overfull \hbox (30.11813pt too wide) in paragraph at lines 43--45
  []|  [] 
  []
 
 
+LaTeX Warning: Reference `fig:max_alt' on page 6 undefined on input line 50.
+
+File: ./Drawings/MatlabFigures/max_alt_first_try.eps Graphic file (type eps)
+<./Drawings/MatlabFigures/max_alt_first_try.eps>
+Overfull \hbox (30.11813pt too wide) in paragraph at lines 56--58
+ []|  [] 
+ []
+
+)
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 27.52777pt.
+ Make it at least 22.83148pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6]) (./rolling_momment_coef.tex
+File: ./Drawings/CameraUploads/model.jpg Graphic file (type QTm)
+ <use  "./Drawings/CameraUploads/model.jpg" >
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.83148pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [7]
 
-LaTeX Warning: Reference `fig:max_alt' on page 8 undefined on input line 50.
-
-File: ./Drawings/MatlabFigures/max_alt_first_try.eps Graphic file (type eps)
-<./Drawings/MatlabFigures/max_alt_first_try.eps>
-Overfull \hbox (30.45146pt too wide) in paragraph at lines 56--58
- []|  [] 
- []
-
-)) (./rolling_momment_coef.tex
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 27.52777pt.
+ Make it at least 22.83148pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [8]
+File: ./Drawings/MatlabFigures/datafit_clp1.eps Graphic file (type eps)
+ <./Drawings/MatlabFigures/datafit_clp1.eps>
+LaTeX Font Info:    Calculating math sizes for size <5.59998> on input line 112
+.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.59998> not available
+(Font)              size <6> substituted on input line 112.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <3.91995> not available
+(Font)              size <5> substituted on input line 112.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <2.79999> not available
+(Font)              size <5> substituted on input line 112.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.59998> not available
+(Font)              size <6> substituted on input line 112.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <3.91995> not available
+(Font)              size <5> substituted on input line 112.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <2.79999> not available
+(Font)              size <5> substituted on input line 112.
+
+
+LaTeX Font Warning: Font shape `TS1/PalatinoLinotype(0)/m/n' in size <5.59998> 
+not available
+(Font)              size <6> substituted on input line 112.
+
+
+LaTeX Font Warning: Font shape `TS1/PalatinoLinotype(0)/m/n' in size <3.91995> 
+not available
+(Font)              size <5> substituted on input line 112.
+
+
+LaTeX Font Warning: Font shape `TS1/PalatinoLinotype(0)/m/n' in size <2.79999> 
+not available
+(Font)              size <5> substituted on input line 112.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.59998> not available
+(Font)              size <6> substituted on input line 112.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <3.91995> not available
+(Font)              size <5> substituted on input line 112.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <2.79999> not available
+(Font)              size <5> substituted on input line 112.
+
+File: ./Drawings/MatlabFigures/datafit_clp2.eps Graphic file (type eps)
+<./Drawings/MatlabFigures/datafit_clp2.eps>
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 27.52777pt.
+ Make it at least 22.83148pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9])
+[9]
+File: ./Drawings/MatlabFigures/v_n_graph.eps Graphic file (type eps)
+ <./Drawings/MatlabFigures/v_n_graph.eps>
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 27.52777pt.
+ Make it at least 22.83148pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10] (./report.bbl)
+[10])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 27.52777pt.
+ Make it at least 22.83148pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11] (./report.aux)
+[11] (./report.bbl)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.83148pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12] (./report.aux)
 
 LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 2.90001pt have occurred.
+(Font)              up to 3.25002pt have occurred.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1494,14 +1559,17 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 22928 strings out of 494893
- 427232 string characters out of 6167768
- 652617 words of memory out of 5000000
- 25759 multiletter control sequences out of 15000+600000
- 21281 words of font info for 128 fonts, out of 8000000 for 9000
+ 22991 strings out of 494893
+ 428787 string characters out of 6167768
+ 654596 words of memory out of 5000000
+ 25816 multiletter control sequences out of 15000+600000
+ 23320 words of font info for 144 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 42i,14n,75p,10466b,433s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,18n,75p,10466b,784s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.pdf (12 pages).
+Output written on report.pdf (13 pages).

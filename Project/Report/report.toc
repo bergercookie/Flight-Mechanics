@@ -4,13 +4,14 @@
 \contentsline {subsection}{\numberline {3.1}Static Perfomance}{2}
 \contentsline {subsection}{\numberline {3.2}Excess Thrust}{2}
 \contentsline {subsection}{\numberline {3.3}SEP Graph}{4}
-\contentsline {subsection}{\numberline {3.4}Maximum altitude - Maximum Mach Number}{5}
-\contentsline {subsection}{\numberline {3.5}Minimum time to climb}{5}
-\contentsline {subsection}{\numberline {3.6}Computing $\gamma (t)$ - minimum time for Mach = 1.5 \& h = 1.1km}{6}
-\contentsline {subsection}{\numberline {3.7}Trajectory for maximum Mach number in minimum time}{7}
-\contentsline {subsection}{\numberline {3.8}Trajectory for maximum altitude in minimum time}{8}
-\contentsline {section}{\numberline {4}Derivation of $C_{l}$ rolling moment coefficient}{9}
-\contentsline {subsection}{\numberline {4.1}Mathematical Modelling}{9}
-\contentsline {subsection}{\numberline {4.2}Derivation of \textit {damping-in-roll} derivative $C_{lp}$}{10}
-\contentsline {subsection}{\numberline {4.3}Derivation of the \textit {Dihedral effect} $C{l\beta }$}{10}
-\contentsline {section}{References}{11}
+\contentsline {subsection}{\numberline {3.4}Maximum altitude - Maximum Mach Number}{4}
+\contentsline {subsection}{\numberline {3.5}Minimum time to climb}{4}
+\contentsline {subsection}{\numberline {3.6}Computing $\gamma (t)$ - minimum time for Mach = 1.5 \& h = 1.1km}{5}
+\contentsline {subsection}{\numberline {3.7}Trajectory for maximum Mach number in minimum time}{6}
+\contentsline {subsection}{\numberline {3.8}Trajectory for maximum altitude in minimum time}{6}
+\contentsline {section}{\numberline {4}Derivation of $C_{l}$ rolling moment coefficient}{7}
+\contentsline {subsection}{\numberline {4.1}Simulation Considerations}{8}
+\contentsline {subsection}{\numberline {4.2}Mathematical Modelling}{8}
+\contentsline {subsection}{\numberline {4.3}Derivation of \textit {damping-in-roll} derivative $C_{lp}$}{9}
+\contentsline {subsection}{\numberline {4.4}Derivation of the \textit {Dihedral effect} $C_{l\beta }$}{11}
+\contentsline {section}{References}{12}
