@@ -1,13 +1,12 @@
 \subsection{Static Perfomance}
 
-\subsection{Excess Thrust}
+\subsubsection{Excess Thrust}
 
-Figure \ref{fig:Tex_Graph} shows the Excess Thrust with regards to the Mach number is presented:
+In fig.~\ref{fig:Tex_Graph} the Excess Thrust with regards to the Mach number is presented:
 
 \begin{figure}[H]
     \centering
-    \hspace*{-2cm}
-    \includegraphics[width=1.2\textwidth]{Tex_Graph}
+    \includegraphics[width=1.0\textwidth]{Tex_Graph}
     \caption{Excess Thrust Graph}
     \label{fig:Tex_Graph}
 \end{figure}
@@ -15,38 +14,27 @@ Figure \ref{fig:Tex_Graph} shows the Excess Thrust with regards to the Mach numb
 Using the graph we can now determine the envelope limits corresponding to the dynamic pressure and the 
 maximum angle of attack. These limits are shown in the diagram as red and blue Xs.
 We should note however that the dynamic pressure limits are not visible in  \ref{fig:Tex_Graph}, when presenting 
-only the part of the diagram above the zero horizontal line, so a supplementary graph (\ref{fig:Tex_Graph2}) is given:
+only the part of the diagram above the zero horizontal line.
+
+\subsubsection{SEP Graph}
+
+\noindent Having computed the Excess thrust of the aircraft model, we can now 
+compute the Specific Excess Power and then form the Envelope graph of the Draken J35 by using
+eq.~\ref{eqn:SEP}. The envelope graph is presented in fig.~\ref{fig:SEP_Graph}.
 
 \begin{figure}[H]
     \centering
-    \hspace*{-2cm}
-    \includegraphics[width=1.2\textwidth]{Tex_Graph2}
-    \caption{Excess Thrust Graph - Dynamic pressure limits Visible}
-    \label{fig:Tex_Graph2}
-\end{figure}
-
-\noindent For the calculation of the Excess Thrust the TexSep function was used. Refer to the TexSep.m module 
-for more information on the implementation
-
-\subsection{SEP Graph}
-
-Using the code provided with the report the Specific Excess Power (SEP) Graph
-can be plotted:
-
-\begin{figure}[H]
-    \centering
-    \hspace*{-2cm}
-    \includegraphics[width=1.2\textwidth]{SEP_Graph}
+    \includegraphics[width=1.0\textwidth]{SEP_Graph}
     \caption{SEP Graph}
     \label{fig:SEP_Graph}
 \end{figure}
 
-Graph \ref{fig:SEP_Graph} shows the contours of same Excess Power with regards to
+\noindent Graph \ref{fig:SEP_Graph} shows the contours of same Excess Power with regards to
 the altitude of the airplane as well as the Mach number thus the velocity of the airplane.
 
-Using the graph we can also determine the envelope limits corresponding to the maximum angle of attack
+Using this graph we can also determine the envelope limits corresponding to the maximum angle of attack
 $(15^{\degree})$ and the maximum dynamic pressure corresponding to $1350 \sfrac{km}{h}$ at sea level which 
-is $8.6133e+04 Pa$.
+is $8.6133e^{+04}\, Pa$.
 
 \subsection{Maximum altitude - Maximum Mach Number}
 The maximum altitude and the maximum Mach Number at which the aircraft can fly level 

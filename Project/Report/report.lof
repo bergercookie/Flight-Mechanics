@@ -1,9 +1,18 @@
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Excess Thrust Graph\relax }}{3}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Excess Thrust Graph - Dynamic pressure limits Visible\relax }}{3}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces SEP Graph\relax }}{4}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Trajector of the airplane to reach M = 1.5 \& h = 11km\relax }}{5}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Velocity, height fuel consumption and gamma angle during the flight\relax }}{5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Trajector of the airplane to reach M = 1.76\relax }}{6}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Trajector of the airplane to reach h = 16km\relax }}{7}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Picture of model during wind tunnel test\relax }}{8}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Velocity - Damping approximation curve\relax }}{11}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Forces acting on the point mass system\relax }}{4}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Excess Thrust Graph\relax }}{6}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces SEP Graph\relax }}{7}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Trajector of the airplane to reach M = 1.5 \& h = 11km\relax }}{8}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Velocity, height fuel consumption and $\gamma $ angle during the flight\relax }}{8}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Trajector of the airplane to reach M = 1.76\relax }}{9}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Trajector of the airplane to reach h = 16km\relax }}{10}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Picture of model during wind tunnel test\relax }}{10}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Examples of the data fitting procedure\relax }}{12}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Velocity - damping approximation curve\relax }}{13}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Fitting of polynomial curve into experimental data, for different $\alpha $ values\relax }}{15}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces $alpha, \delta _e,\delta _p$ for the trimmed Model\relax }}{17}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Elevator setting for different cg positions\relax }}{18}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Root Locus graph with regards to the airspeed\relax }}{19}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Simulation outcome for constant $\delta _e,\delta _p$\relax }}{21}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Nonlinear Simulation results for xcg = 10.3m\relax }}{22}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Looping Trajectory\relax }}{23}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Parameters status during looping\relax }}{24}

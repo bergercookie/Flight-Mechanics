@@ -1,0 +1,45 @@
+************************************************************************
+**Running the Weasel words script**
+abstract.tex:7:In the final part, we deal with various stability and control aspects of the aircraft, as
+intro_reloaded.tex:41:carried a completely different sweep angle, much shallower at 60 degrees.  This
+intro_reloaded.tex:42:brought excellent maneuverability and enhanced control at low speeds.
+report.tex:25:\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+report.tex:128:  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+titlepage.tex:14:\huge Flight Mechanics \vspace{5mm}\\
+**Running the Passive voice script**
+abstract.tex:3:This work deals with varius aspects of the \textit{J35 Draken aircraft} performace. More specifically the report is devided into three main
+abstract.tex:5:problems (reaching maximum altitude, maximum Mach number, etc) so that the ideal trajectory to fly with is found
+abstract.tex:6:In the second part the $C_{lp},\, C_{l\beta}$ constants are calculated after the processing of experimental data.
+abstract.tex:10:The report is intended for the \textit{Flight Mechanics} course offered by the School of 
+abstract.tex:12:technical computing language was used.
+intro_reloaded.tex:8:to chose from were swept wings and delta wings \cite{dorr_aerofax_1987}.
+intro_reloaded.tex:19:In general the double delta was found to offer the attributes of:
+intro_reloaded.tex:39:such a sharp sweep, it was recognized that the plane would be seriously lacking
+mathematical_modelling_1.tex:7:acting on the airplane are given in fig.~\ref{fig:forces_sketch}.
+mathematical_modelling_1.tex:16:\noindent The set of differential equations governing the motion of the aircraft is stated 
+mathematical_modelling_1.tex:50:the flight path is negligble ($\dot{\gamma} = 0$) so that the system evolution is defined only by eq.~\ref{eqn:pointmass1}
+mathematical_modelling_1.tex:59:\noindent The angle of attack is obtained in each iteration of the numerical scheme
+mathematical_modelling_1.tex:64:The relation between Excess thrust and Specific Excess Power is given by the following equation:
+minimum_time.tex:11:The feasible solution to the above challenge is shown in \ref{fig:m15h11}. \ref{fig:m15h11_2}
+minimum_time.tex:47:The diagram for reaching the maximum altitude is given in \ref{fig:max_alt_first_try}.
+report.tex:113:  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+report.tex:128:  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+report.tex:129:  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+report.tex:133:  stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+report.tex:143:\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+rolling_momment_coef.tex:2:In this part of the project the rolling moment coefficient of the J35 Draken is to be calculated.
+rolling_momment_coef.tex:3:For the simulation, the model of fig.\ref{fig:model} was used:
+rolling_momment_coef.tex:15:The following can be stated when comparing the J35 Draken aircraft with the wind tunnel model used(fig.~\ref{fig:model})
+rolling_momment_coef.tex:27:a valid mathematical model needs to be derived first. 
+rolling_momment_coef.tex:51:For the calculation of the rolling moment the following equations can be used:
+rolling_momment_coef.tex:59:A sufficient model of calculating $C_l$ - the rolling moment coefficient - is given in equation
+rolling_momment_coef.tex:118:the experimental data gathered. The oscillation of the rolling motion can be modelled as a 
+rolling_momment_coef.tex:146:\footnote{The reader is encouraged to refer to stiff.m of the code part for the actual implementation}.
+rolling_momment_coef.tex:148:The procedure can be summarised in the next steps:
+rolling_momment_coef.tex:151:    has already been determined experimentally.} using one of the  $\alpha = 0 \& V = 0$ measurements available.
+static_performance.tex:5:In fig.~\ref{fig:Tex_Graph} the Excess Thrust with regards to the Mach number is presented:
+static_performance.tex:15:maximum angle of attack. These limits are shown in the diagram as red and blue Xs.
+static_performance.tex:23:eq.~\ref{eqn:SEP}. The envelope graph is presented in fig.~\ref{fig:SEP_Graph}.
+static_performance.tex:41:can be determined using \ref{fig:SEP_Graph}:
+**Running the Duplicates script**
+************************************************************************

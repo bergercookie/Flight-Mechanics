@@ -1,0 +1,58 @@
+\begin{thenomenclature} 
+
+ \nomgroup{A}
+
+  \item [{$\alpha$}]\begingroup Angle of attack\nomeqref {2.5}
+		\nompageref{4}
+  \item [{$\beta$}]\begingroup Sideslip angle\nomeqref {3.4}
+		\nompageref{11}
+  \item [{$\epsilon$}]\begingroup Thrust angle\nomeqref {2.5}
+		\nompageref{4}
+  \item [{$\gamma$}]\begingroup Fligth Path angle\nomeqref {2.5}
+		\nompageref{4}
+  \item [{$\rho$}]\begingroup Density of air\nomeqref {3.1}
+		\nompageref{10}
+  \item [{$\theta$}]\begingroup Angle of attitude\nomeqref {2.5}
+		\nompageref{4}
+  \item [{$C$}]\begingroup Damping coefficient of aircraft rolling motion\nomeqref {3.1}
+		\nompageref{10}
+  \item [{$C_l$}]\begingroup Rolling moment coefficient\nomeqref {3.3}
+		\nompageref{11}
+  \item [{$C_{l\beta}$}]\begingroup Dihedral Effect\nomeqref {3.10}
+		\nompageref{11}
+  \item [{$C_{lp}$}]\begingroup Damping in Roll Coefficient\nomeqref {3.10}
+		\nompageref{11}
+  \item [{$D$}]\begingroup Drag force\nomeqref {2.5}\nompageref{4}
+  \item [{$h$}]\begingroup Aircraft altitude\nomeqref {2.5}
+		\nompageref{4}
+  \item [{$I_{xx}$}]\begingroup Rolling moment of inertia\nomeqref {3.1}
+		\nompageref{10}
+  \item [{$k$}]\begingroup Spring coefficient of aircraft rolling motion\nomeqref {3.1}
+		\nompageref{10}
+  \item [{$L$}]\begingroup Lift force\nomeqref {2.5}\nompageref{4}
+  \item [{$l$}]\begingroup Rolling moment\nomeqref {3.3}\nompageref{11}
+  \item [{$m$}]\begingroup Aircraft total mass\nomeqref {2.5}
+		\nompageref{4}
+  \item [{$p$}]\begingroup Roll angle derivative\nomeqref {3.1}
+		\nompageref{10}
+  \item [{$q$}]\begingroup Dynamical Pressure\nomeqref {3.1}
+		\nompageref{10}
+  \item [{$SEP$}]\begingroup Specific Excess Power\nomeqref {2.7}
+		\nompageref{5}
+  \item [{$T_{ex}$}]\begingroup Excess thrust\nomeqref {2.7}
+		\nompageref{5}
+  \item [{$u$}]\begingroup Projection of velocity on the x-axis of airplane (Body-fixed system)\nomeqref {3.1}
+		\nompageref{10}
+  \item [{$V$}]\begingroup Total Aircraft Velocity\nomeqref {2.5}
+		\nompageref{4}
+  \item [{$v$}]\begingroup Projection of velocity on the y-axis of airplane (Body-fixed system)\nomeqref {3.1}
+		\nompageref{10}
+  \item [{$w$}]\begingroup Projection of velocity on the w-axis of airplane (Body-fixed system)\nomeqref {3.1}
+		\nompageref{10}
+  \item [{$x_{\epsilon}$}]\begingroup Aircraft horizontal position displacement\nomeqref {2.5}
+		\nompageref{4}
+  \item [{b}]\begingroup Airplane Span\nomeqref {3.10}\nompageref{11}
+  \item [{S}]\begingroup Airplane Surface Area\nomeqref {3.10}
+		\nompageref{11}
+
+\end{thenomenclature}

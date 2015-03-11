@@ -3,44 +3,45 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: report.aux
 The style file: plain.bst
 Database file #1: j35_draken.bib
-You've used 2 entries,
+Database file #2: riseofDraken.bib
+You've used 3 entries,
             2118 wiz_defined-function locations,
-            509 strings with 4237 characters,
-and the built_in function-call counts, 530 in all, are:
-= -- 46
-> -- 25
+            513 strings with 4368 characters,
+and the built_in function-call counts, 732 in all, are:
+= -- 64
+> -- 32
 < -- 0
-+ -- 10
-- -- 8
-* -- 28
-:= -- 100
-add.period$ -- 7
-call.type$ -- 2
-change.case$ -- 8
++ -- 13
+- -- 10
+* -- 33
+:= -- 133
+add.period$ -- 10
+call.type$ -- 3
+change.case$ -- 12
 chr.to.int$ -- 0
-cite$ -- 2
-duplicate$ -- 24
-empty$ -- 45
-format.name$ -- 8
-if$ -- 108
+cite$ -- 3
+duplicate$ -- 31
+empty$ -- 67
+format.name$ -- 10
+if$ -- 152
 int.to.chr$ -- 0
-int.to.str$ -- 2
+int.to.str$ -- 3
 missing$ -- 4
-newline$ -- 14
-num.names$ -- 4
-pop$ -- 16
+newline$ -- 19
+num.names$ -- 6
+pop$ -- 27
 preamble$ -- 1
-purify$ -- 8
+purify$ -- 11
 quote$ -- 0
-skip$ -- 12
+skip$ -- 18
 stack$ -- 0
-substring$ -- 10
-swap$ -- 2
+substring$ -- 15
+swap$ -- 3
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 4
+type$ -- 8
 warning$ -- 0
-while$ -- 4
-width$ -- 3
-write$ -- 25
+while$ -- 6
+width$ -- 4
+write$ -- 34

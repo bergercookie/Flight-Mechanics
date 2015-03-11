@@ -4,7 +4,7 @@ For the simulation, the model of fig.\ref{fig:model} was used:
 
 \begin{figure}[H]
     \begin{center}
-        \includegraphics[width = \textwidth]{model.jpg} % Just THIS!!!
+        \includegraphics[width = 0.6\textwidth]{model.jpg} % Just THIS!!!
     \end{center}
     \caption{Picture of model during wind tunnel test}
     \label{fig:model}
@@ -12,7 +12,7 @@ For the simulation, the model of fig.\ref{fig:model} was used:
 
 \subsection{Simulation Considerations}
 
-The following can be stated when comparing the j35 Draken aircraft with the wind tunnel model used(~fig.\ref{fig:model}
+The following can be stated when comparing the J35 Draken aircraft with the wind tunnel model used(fig.~\ref{fig:model})
 \begin{itemize*}
     \item Apparently the major difference is the \textit{absence of the fin}. 
         This fact eventually caused considerable divergence between the values computed during the 
@@ -23,26 +23,40 @@ The following can be stated when comparing the j35 Draken aircraft with the wind
 
 
 \subsection{Mathematical Modelling}
-In order to proceed with the analysis and the computation of $C_{lp}, C_{l\beta} parameters$, 
+To proceed with the analysis and the computation of $C_{lp}, C_{l\beta}$ parameters, 
 a valid mathematical model needs to be derived first. 
-If I implement the Newton's second law for the rolling movement
-I can derive equation \ref{eqn:newton_angular}.
+If We implement the Newton's second law for the rolling movement
+we can derive equation \ref{eqn:newton_angular}.
 
 \begin{equation}
     \Sigma T = I_{xx}\ddot{\phi} \Rightarrow 
-    L - C\dot{\phi} - k\phi = I_{xx}\ddot{\phi},
+    l - C\dot{\phi} - k\phi = I_{xx}\ddot{\phi},
     \label{eqn:newton_angular}
 \end{equation}
+
+\nomenclature{$I_{xx}$}{Rolling moment of inertia}%
+\nomenclature{$C$}{Damping coefficient of aircraft rolling motion}%
+\nomenclature{$q$}{Dynamical Pressure}%
+\nomenclature{$C$}{Damping coefficient of aircraft rolling motion}%
+\nomenclature{$k$}{Spring coefficient of aircraft rolling motion}%
+\nomenclature{$p$}{Roll angle derivative}%
+\nomenclature{$\rho$}{Density of air}%
+\nomenclature{$u$}{Projection of velocity on the x-axis of airplane (Body-fixed system)}%
+\nomenclature{$v$}{Projection of velocity on the y-axis of airplane (Body-fixed system)}%
+\nomenclature{$w$}{Projection of velocity on the w-axis of airplane (Body-fixed system)}%
 
 \noindent where $C\dot{\phi}$ is the moment exerted due to the (mechanical) damping and $k\phi$ is
 the moment due to the (mechanical) spring stiffness of the device holding the airplane during the simulation.
 For the calculation of the rolling moment the following equations can be used:
 \begin{eqnarray}
-    L &=& C_l q b S \label{eqn:roll_moment} \label{eqn:L}\\
+    l &=& C_l q b S \label{eqn:roll_moment} \label{eqn:l}\\
     C_l &=&  C_{lp}\frac{pb}{2u} + C_{l\beta}\beta \label{eqn:cl}\\
     p &=&\dot{\phi} \notag\\
     q &=&  \frac{1}{2}\rho v^2 \notag
 \end{eqnarray}
+
+\nomenclature{$l$}{Rolling moment}%
+\nomenclature{$C_l$}{Rolling moment coefficient}%
 
 A sufficient model of calculating $C_l$ - the rolling moment coefficient - is given in equation
 \ref{eqn:cl}. According to this, $C_l$ is a function of $C_{lp}$ the \textit{damping-in-roll}
@@ -56,17 +70,19 @@ calculating $\beta$ can be the following:
     \label{eqn:beta}
 \end{equation}
 
-If I now substitute the expression of rolling moment \ref{eqn:L} into the initial equation
+\nomenclature{$\beta$}{Sideslip angle}%
+
+\noindent If we now substitute the expression of rolling moment \ref{eqn:l} into the initial equation
 \ref{eqn:newton_angular}, and move all the $\phi, \dot{\phi}$ terms to the other side of the equation
-I can end up with the following second order differential equation:
+we can end up with the following second order differential equation:
 
 \begin{equation}
     I_{xx}\ddot{\phi} + \dot{\phi}\big(C_{mech} - \frac{C_{lp}Sb^2q}{2u}\big) + \big(k - C_{l\beta}aqbS\big)\phi = 0
     \label{eqn:ode_used}
 \end{equation}
 
-The analytical solution of \ref{eqn:ode_used} for the general case of complex roots
-(which is what I expect due to the oscillatory behavior of the model movement) is the following:
+\noindent The analytical solution of \ref{eqn:ode_used} for the general case of complex roots
+(which is what we expect due to the oscillatory behavior of the model movement) is the following:
 
 \begin{eqnarray}
     \phi &=&  c_1e^{\alpha' x}cos(\beta' x) + c_2e^{\alpha' x} sin(\beta' x) \label{eqn:phianal}\\
@@ -76,12 +92,17 @@ The analytical solution of \ref{eqn:ode_used} for the general case of complex ro
 
 where $\alpha, \beta, c$ are the coefficients of \ref{eqn:ode_used} respectively:
 \begin{eqnarray}
-    \alpha &=& I_{xx} \notag\\
-    \beta &=&  C_{mech} - \frac{C_{lp}Sb^2q}{2u} \notag\\
-    c &=&  k - C_{l\beta}aqbS \notag
+    \alpha &=& I_{xx} \label{eqn:alpha}\\
+    \beta &=&  C_{mech} - \frac{C_{lp}Sb^2q}{2u} \label{eqn:beta}\\
+    c &=&  k - C_{l\beta}aqbS \label{eqn:c}
 \end{eqnarray}
 
-\noindent In order to get the analytical solution of the roll rate $\dot{\phi}$ I take the derivative 
+\nomenclature{b}{Airplane Span}%
+\nomenclature{S}{Airplane Surface Area}%
+\nomenclature{$C_{lp}$}{Damping in Roll Coefficient}%
+\nomenclature{$C_{l\beta}$}{Dihedral Effect}%
+
+\noindent To get the analytical solution of the roll rate $\dot{\phi}$ we take the derivative 
 of \ref{eqn:phianal}:
 
 \begin{eqnarray}
@@ -95,9 +116,9 @@ of \ref{eqn:phianal}:
 
 \subsection{Derivation of \textit{damping-in-roll} derivative $C_{lp}$}
 
-In order to derive the $C_{lp}$ parameter, I first need to extract information out of 
+To derive the $C_{lp}$ parameter, we first need to extract information out of 
 the experimental data gathered. The oscillation of the rolling motion can be modelled as a 
-decaying sinusoidal function of time. Therefore I can fit an exponential sinusoidal function 
+decaying sinusoidal function of time. Therefore we can fit an exponential sinusoidal function 
 of the form~\ref{eqn:panal} in the data and estimate each parameter 
 by using the least squares method.
 
@@ -118,37 +139,98 @@ approximation algorithm used.
                 \caption{V = 45 $\sfrac{m}{s}$}
                 \label{fig:datafit2}
         \end{subfigure}
+
+        \caption{Examples of the data fitting procedure}
 \end{figure}
 
-To derive only the value of the $C_{lp}$ parameter I have to take into account \textit{only the data for $\alpha = 0$},
+To derive only the value of the $C_{lp}$ parameter we have to take into account \textit{only the data for $\alpha = 0$},
 because otherwise $C_{l\beta}$ starts to play a role in the behavior of the oscilation (see eq.~\ref{eqn:ode_used}).
 
-In order to extract the maximum amount of data and be as accurate as possible I \textit{exploit all the $\alpha = 0$ measurements taken during the laboratory sessions.}
+To extract the maximum amount of data and be as accurate as possible we \textit{process all the $\alpha = 0$ measurements taken during the laboratory sessions.}
 \footnote{The reader is encouraged to refer to stiff.m of the code part for the actual implementation}.
 
 The procedure can be summarised in the next steps:
 \begin{enumerate}
-    \item Calculation of $C_{mech}, I_{xx}$\footnote{I know that $I_xx = \sqrt{\frac{k}{\omega^2}}$ where k
-    has already been determined experimentally.} using one of the  $\alpha = 0 \& V = 0$ measurements available.
+    \item Calculation of $C_{mech}, I_{xx}$\footnote{I know that $I_{xx} = \sqrt{\frac{k}{\omega^2}}$ where k
+    has already been determined experimentally.} using one of the  $\alpha = 0,\, V = 0$ measurements available.
     \item Approximation of the n-v \footnote{n is the damping coefficient, equivalent to $\beta'$ of eq.~\ref{eqn:panal}}curve by using a wide rage of velocities to calculate n-values and by using the least squares method.
     \item Calculation of the n-v  curve slope from which knowing every other quantity I can extract an estimation of the $C_{lp}$ value.
 \end{enumerate}
 
-Using this strategy I can now derive the approximation curve of the n-v points:
+Using this strategy we can now derive the approximation curve of the n-v points:
 \begin{figure}[H]
     \begin{center}
         \includegraphics[width = \textwidth]{v_n_graph} % Just THIS!!!
     \end{center}
-    \caption{Velocity - Damping approximation curve}
+    \caption{Velocity - damping approximation curve}
     \label{fig:v_n_graph}
 \end{figure}
 
-\noindent From the above graph and using the methodology described in the previous steps I can now conclude to the value of $C_{lp}$:
+\noindent From the above graph and using the methodology described in the previous steps we can now conclude to the value of $C_{lp}$:
 \begin{equation}
     C_{lp} \simeq -0.190
 \end{equation}
 
 \noindent Since this value is (strictly) negative and is close to the data given for the real aircraft (for $\alpha = 0$), 
-I can conclude that it is a logical estimation of the damping-in-roll coefficient.
+We can conclude that it is a logical estimation of the damping-in-roll coefficient.
 
 \subsection{Derivation of the \textit{Dihedral effect} $C_{l\beta}$}
+
+We use the same strategy as in the derivation of $C_{lp}$ to find a formula for 
+calculating $C_{l\beta}$. $C_{l\beta}$ appers only in the formula of $\beta'$ (see eq. ~\ref{eqn:phianal})
+which corresponds to the natural frequency of the aircraft oscillation. Executing the 
+necessary computations, we can find an expression for the calculation of $C_{l\beta}$.
+
+\begin{align}
+    \omega_n &= \beta' = \frac{\sqrt{4\alpha c - \beta^2}}{2\alpha} \Rightarrow \notag\\
+    \omega_n^2 &= \frac{4\alpha c - \beta^2}{4\alpha^2} \Rightarrow \notag\\
+    &\Rightarrow \{\textrm{Substituting quantities from eq.~\ref{eqn:alpha}-\ref{eqn:c}} \}\Rightarrow \notag\\
+    \omega_n^2 &= -\bigg(\frac{C_{l\beta}\alpha \rho bS}{2I_{xx}} + \frac{C_{lp}^2\rho S^2 b^4 \rho^2}{64I_{xx}^2}\bigg)V^2
+    + \bigg(\frac{C_{mech}C_{lp}Sb^2\rho}{8I_{xx}^2}\bigg)V
+    + \big(4I_{xx}k - C_{mech}^2\big) \label{eqn:wn2_V}
+\end{align}
+
+If we now fit the experimental data (V, $\omega_n^2$) into a quadratic polynomial model of the form 
+$ax^2 + bx + c$ using the least squares method and extract the 
+coefficients a, b, c we can find an analytical formula for $C_{l\beta}$.
+So taking this into account and knowing that $C_{l\beta}$ appears in the expression
+of the first coefficient of the $V-\omega_n^2$ curve, we end up with the following expresion:
+
+\begin{equation}
+    C_{l\beta} = -\bigg(\frac{2I_{xx}\times coeff(1)}{\alpha \rho bS} + 
+    \frac{C_{lp}^2Sb^3I_{xx}}{32I_{xx}^2\alpha b}\bigg)
+    \label{eqn:clb_calc}
+\end{equation}
+
+As we can see from eq~\ref{eqn:clb_calc} $C_{l\beta}$ is a function of the 
+first coefficient of the fitting curve (coeff(1)), of $C_{lp}$ which was previously
+calculated, and of $\alpha$. To proceed to the actual calculation, 
+we fit quadratic polynomial curves over the $V-\omega^2$ pairs for each value of $\alpha$
+and therefore caclulate the $C_{l\beta}$ values.
+\footnote{We consider only the values of $\alpha$ for which sufficient experimental data has been gathered.
+See stiff.m for the actual implementation}
+
+Having executed the above procedure we end up with the following graphs 
+for different $\alpha$ angles
+\footnote{Some basic filtering was needed for the gathered experimental points. 
+More specifically points that were outside the range of 3}
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width = \textwidth]{v_wmega2_graph} % Just THIS!!!
+    \end{center}
+    \caption{Fitting of polynomial curve into experimental data, for different $\alpha$ values}
+    \label{fig:v_wmega2_graph}
+\end{figure}
+
+If we now extract $C_{l\beta}$ using eq.~\ref{eqn:clb_calc} we end up with the 
+following values:
+
+\begin{itemize}
+    \item $\alpha = 2\degree\; \rightarrow \beta  = -0.0026$
+    \item $\alpha = 3\degree\; \rightarrow \beta  = 0.0048$
+    \item $\alpha = 4\degree\; \rightarrow \beta  = 0.0037$
+    \item $\alpha = 6\degree\; \rightarrow \beta  = -0.0037$
+    \item $\alpha = 15\degree\; \rightarrow \beta  = -0.0063$
+\end{itemize}
+
