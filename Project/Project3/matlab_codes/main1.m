@@ -225,9 +225,9 @@ if part1a || ((part1b || part1c) && ~exist('states_array', 'var') && ~exist('sta
     h_legend = legend(legend_plots, legend_strings);
     set(h_legend, 'FontSize', fontsize);
     
-    % save the plots
-    print(gcf, '-depsc2',[path_to_plots,'equilibrium_conditions']);
-    saveas(gcf, [path_to_plots, 'equilibrium_conditions'], 'fig');
+%     % save the plots
+%     print(gcf, '-depsc2',[path_to_plots,'equilibrium_conditions']);
+%     saveas(gcf, [path_to_plots, 'equilibrium_conditions'], 'fig');
 end
 
 if part1b
@@ -378,9 +378,9 @@ if part1b
         {sprintf('xcg = %.2fm', xcg_list(1)), sprintf('xcg = %.2fm', xcg_list(2))});
     set(h_legend, 'Fontsize', fontsize);
     
-    % save the plots
-    print(gcf, '-depsc2',[path_to_plots,'xcg_investigation']);
-    saveas(gcf, [path_to_plots, 'xcg_investigation'], 'fig');
+%     % save the plots
+%     print(gcf, '-depsc2',[path_to_plots,'xcg_investigation']);
+%     saveas(gcf, [path_to_plots, 'xcg_investigation'], 'fig');
 end
 
 if part1c

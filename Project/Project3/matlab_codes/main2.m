@@ -194,6 +194,6 @@ for altm_i = 1:length(altm_list)
 end
 fclose(fid);
 
-% save the figure
-print(gcf, '-depsc2',[path_to_plots,'linear_stability']);
-saveas(gcf, [path_to_plots, 'linear_stability'], 'fig');
+% % save the figure
+% print(gcf, '-depsc2',[path_to_plots,'linear_stability']);
+% saveas(gcf, [path_to_plots, 'linear_stability'], 'fig');

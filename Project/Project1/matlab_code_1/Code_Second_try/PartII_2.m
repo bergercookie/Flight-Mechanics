@@ -7,8 +7,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % PartII
-% alternative implementation of the optimization procedure
-% run PartI first, then run Part II and follow the instructions 
+% Interactive Implementation of the optimization procedure
+% run PartI first, then run Part II and follow the instructions
+% Just for experimental use
 
 clearvars -except qdyn_lim2 alfa_lim2 alt_range mach_range energy_2dmat powers_2dmat
 

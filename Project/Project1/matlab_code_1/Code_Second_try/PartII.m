@@ -8,7 +8,9 @@
 
 % PartII
 % standard version of the optimization part
-% first run Part I to have the optical results of the SEP Graph
+% **FIRST** run part I to have the optical results of the SEP Graph
+%
+% An interactive version of the algorithm also exists in PartII_2.m
 
 clearvars -except qdyn_lim2 alfa_lim2 alt_range mach_range energy_2dmat powers_2dmat
 

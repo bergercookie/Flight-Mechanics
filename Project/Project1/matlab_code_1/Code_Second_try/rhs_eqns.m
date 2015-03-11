@@ -1,4 +1,11 @@
 function [y_out] = rhs_eqns(t, y)
+% RHS_EQNS returns the right hand side of the ordinary differential
+% equations in an ode45 compatible form. 
+% INPUTS:
+%     time instance (t) [s]
+%     y (current state)
+% OUTPUTS:
+%     derivative of state as calaculated at time instance t
 
 %% Variable Definitions
 global sref tepsr xtpref xtpfpl rmfpl rmfull

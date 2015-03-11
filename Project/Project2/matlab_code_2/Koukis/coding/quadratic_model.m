@@ -1,6 +1,6 @@
 function y = quadratic_model(x, td)
 % QUADRATIC_MODEL provides a function which is used for approximating the
-% of velocity damping pairs calculated
+% of velocity - wn^2 pairs calculated
 % func = a - b*t
 % func = a*t^2 + b*t + c;
 % x(1) = a

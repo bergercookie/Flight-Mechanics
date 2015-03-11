@@ -9,8 +9,16 @@
 % Project Work III - Part III Manuevers
 %
 % CONTENTS
-% todo
+%     Nonlinear simulation
+%     Looping
 
+% DESCRIPTION
+%     This program is intended for the 3rd part of Project 3. The user
+%     inputs at the lines instructed csv files from which the program
+%     parses the time and de, dp inputs for the actual simulation. Then the
+%     time integartion scheme calculates the plane trajectory as well as
+%     the time evolution of various plane properties (aoa, altitude,
+%     distance, etc) and presents them into figures.
 % Remember that this model is for low speed but high alfa
 
 clc;
@@ -279,9 +287,9 @@ xlabel('Time [s]', 'FontSize', fontsize);
 p=mtit('States & Outputs',...
     'fontsize',fontsize+2,'color',[1 0 0]);
 
-% save the figure
-print(gcf, '-depsc2',[path_to_plots,'cobra_status']);
-saveas(gcf, [path_to_plots, 'cobra_status'], 'fig');
+% % save the figure
+% print(gcf, '-depsc2',[path_to_plots,'cobra_status']);
+% saveas(gcf, [path_to_plots, 'cobra_status'], 'fig');
 
 figure(2); clf()
 hold on; grid on;
@@ -291,6 +299,6 @@ ylabel('Altitude [m]', 'FontSize', fontsize);
 plot(x_list, h_list, 'Color', colors_array(15, :),...
     'LineWidth', linewidth);
 
-% save the figure
-print(gcf, '-depsc2',[path_to_plots,'cobra1']);
-saveas(gcf, [path_to_plots, 'cobra1'], 'fig');
+% % save the figure
+% print(gcf, '-depsc2',[path_to_plots,'cobra1']);
+% saveas(gcf, [path_to_plots, 'cobra1'], 'fig');

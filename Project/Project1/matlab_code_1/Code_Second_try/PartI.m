@@ -6,6 +6,12 @@
 % Project Work I                     %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+% This is the implementation of part I of the 1st project work in Flight
+% Mechanics. The purpose of the module is to use TexSep.m to calculate the
+% excess thrust and power of the Draken model and make visual graphs out of
+% the results. 
+
 clearvars
 
 path_to_plots = '../../../Report/Drawings/MatlabFigures/';

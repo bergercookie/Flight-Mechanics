@@ -1,7 +1,16 @@
 function [Tex, Sep, alfa, eq_energy] = TexSep(altkm, mach, mass, gamma)
-% function used to calculate the Excess thrust for the given circumstance.
-% TexSep takes as arguements the altitude [km], the mach number, the mass [kg], the flight
-% math angle [rad] and returns the excess thrust [N].
+% The purpose of TEXSEP is to calculate the excess thrust and Specific excess power
+% for the given circumstance.
+% INPUTS:
+%     altitude [km]
+%     mach number
+%     mass
+%     gamma angle
+% OUTPUT
+%     Excess thrust
+%     SEP
+%     alfa
+%     Total Energy
 
 
 %% variable definitions

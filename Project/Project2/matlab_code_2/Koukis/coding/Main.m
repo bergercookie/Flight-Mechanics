@@ -6,6 +6,13 @@
 % Project Work II                    %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% Flight Mechanics, Project work 2. Main file
+%
+% Main file for computing the Clp Clb coefficients for the aircraft model.
+% Reads the data out of the experimental_data folder for each one of the
+% teams. (Do not change the location of that folder).
+
+
 %% Initializing stuff
 clearvars;
 clc;
@@ -202,8 +209,8 @@ ylabel('Damping Coefficient - n', 'FontSize', fontsize);
 h_legend = legend('Experimental Data', 'Approximation Curve');
 set(h_legend,'FontSize',fontsize);
 title('Velocity - Damping Curve', 'FontSize', fontsize+2);
-saveas(gcf, strcat(path_to_plot, 'v_n_graph'), graph_type);
-print(gcf, '-depsc2',[path_to_plot, 'v_n_graph']);
+% saveas(gcf, strcat(path_to_plot, 'v_n_graph'), graph_type);
+% print(gcf, '-depsc2',[path_to_plot, 'v_n_graph']);
 
 
 %% Processing for Clb
@@ -287,8 +294,8 @@ for a_i = 1:length(alphas2consider)
     update_str = sprintf('aoa = %2.2f deg:\tClb = %.4f\n', a, clb);
     results_strs{a_i+1} = update_str;
 end
-saveas(gcf, strcat(path_to_plot, 'v_wmega2_graph'), graph_type);
-print(gcf, '-depsc2',[path_to_plot, 'v_wmega2_graph']);
+% saveas(gcf, strcat(path_to_plot, 'v_wmega2_graph'), graph_type);
+% print(gcf, '-depsc2',[path_to_plot, 'v_wmega2_graph']);
 
 
 % print the results for Clb

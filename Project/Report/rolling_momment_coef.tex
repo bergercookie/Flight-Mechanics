@@ -51,8 +51,8 @@ For the calculation of the rolling moment the following equations can be used:
 \begin{eqnarray}
     l &=& C_l q b S \label{eqn:roll_moment} \label{eqn:l}\\
     C_l &=&  C_{lp}\frac{pb}{2u} + C_{l\beta}\beta \label{eqn:cl}\\
-    p &=&\dot{\phi} \notag\\
-    q &=&  \frac{1}{2}\rho v^2 \notag
+    p &=&\dot{\phi} \\
+    q &=&  \frac{1}{2}\rho u^2 
 \end{eqnarray}
 
 \nomenclature{$l$}{Rolling moment}%
@@ -97,8 +97,8 @@ where $\alpha, \beta, c$ are the coefficients of \ref{eqn:ode_used} respectively
     c &=&  k - C_{l\beta}aqbS \label{eqn:c}
 \end{eqnarray}
 
-\nomenclature{b}{Airplane Span}%
-\nomenclature{S}{Airplane Surface Area}%
+\nomenclature{$b$}{Airplane Span}%
+\nomenclature{$S$}{Airplane Surface Area}%
 \nomenclature{$C_{lp}$}{Damping in Roll Coefficient}%
 \nomenclature{$C_{l\beta}$}{Dihedral Effect}%
 
@@ -118,7 +118,7 @@ of \ref{eqn:phianal}:
 
 To derive the $C_{lp}$ parameter, we first need to extract information out of 
 the experimental data gathered. The oscillation of the rolling motion can be modelled as a 
-decaying sinusoidal function of time. Therefore we can fit an exponential sinusoidal function 
+decaying sinusoidal function of time. Therefore we can fit a function 
 of the form~\ref{eqn:panal} in the data and estimate each parameter 
 by using the least squares method.
 
@@ -157,22 +157,26 @@ The procedure can be summarised in the next steps:
     \item Calculation of the n-v  curve slope from which knowing every other quantity I can extract an estimation of the $C_{lp}$ value.
 \end{enumerate}
 
-Using this strategy we can now derive the approximation curve of the n-v points:
-\begin{figure}[H]
+Using this strategy we can now derive the approximation curve of the n-v points
+presented in fig~\ref{fig:v_n_graph}. Using this graph and the methodology described 
+in the previous steps we can now conclude to the value of $C_{lp}$:
+
+\begin{equation}
+    C_{lp} \simeq -0.190
+\end{equation}
+Since this value is (strictly) negative and is 
+close to the data given for the real aircraft~\cite{database}(for $\alpha = 0$), 
+We can conclude that it is a logical estimation of the damping-in-roll coefficient.
+
+\begin{figure}[th]
     \begin{center}
-        \includegraphics[width = \textwidth]{v_n_graph} % Just THIS!!!
+        \includegraphics[width=0.7\textwidth]{v_n_graph} % Just THIS!!!
     \end{center}
     \caption{Velocity - damping approximation curve}
     \label{fig:v_n_graph}
 \end{figure}
 
-\noindent From the above graph and using the methodology described in the previous steps we can now conclude to the value of $C_{lp}$:
-\begin{equation}
-    C_{lp} \simeq -0.190
-\end{equation}
 
-\noindent Since this value is (strictly) negative and is close to the data given for the real aircraft (for $\alpha = 0$), 
-We can conclude that it is a logical estimation of the damping-in-roll coefficient.
 
 \subsection{Derivation of the \textit{Dihedral effect} $C_{l\beta}$}
 
@@ -211,13 +215,14 @@ and therefore caclulate the $C_{l\beta}$ values.
 See stiff.m for the actual implementation}
 
 Having executed the above procedure we end up with the following graphs 
-for different $\alpha$ angles
+for different $\alpha$ angles:
 \footnote{Some basic filtering was needed for the gathered experimental points. 
-More specifically points that were outside the range of 3}
+More specifically points that were outside the range of 3$sigma$ where $\sigma$
+is the standard deviation of the distribution were ruled out.}
 
 \begin{figure}[H]
     \begin{center}
-        \includegraphics[width = \textwidth]{v_wmega2_graph} % Just THIS!!!
+        \includegraphics[width = 0.8\textwidth]{v_wmega2_graph} % Just THIS!!!
     \end{center}
     \caption{Fitting of polynomial curve into experimental data, for different $\alpha$ values}
     \label{fig:v_wmega2_graph}

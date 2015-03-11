@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014/MacPorts 2014_6) (preloaded format=xelatex 2015.2.9)  11 MAR 2015 00:56
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014/MacPorts 2014_6) (preloaded format=xelatex 2015.2.9)  11 MAR 2015 11:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1388,13 +1388,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [5]
 File: ./Drawings/MatlabFigures/SEP_Graph.eps Graphic file (type eps)
  <./Drawings/MatlabFigures/SEP_Graph.eps>
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 22.83148pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[6]
 LaTeX Font Info:    Calculating math sizes for size <6.99997> on input line 36.
 
 
@@ -1416,17 +1409,18 @@ LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <3.49998> not available
 (Font)              size <5> substituted on input line 36.
 
 ) (./minimum_time.tex
-File: ./Drawings/MatlabFigures/mach15alt11.eps Graphic file (type eps)
- <./Drawings/MatlabFigures/mach15alt11.eps>
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 22.83148pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7]
+[6]
+File: ./Drawings/MatlabFigures/mach15alt11.eps Graphic file (type eps)
+ <./Drawings/MatlabFigures/mach15alt11.eps>
 File: ./Drawings/MatlabFigures/mach15alt11_2.eps Graphic file (type eps)
- <./Drawings/MatlabFigures/mach15alt11_2.eps>
+
+<./Drawings/MatlabFigures/mach15alt11_2.eps>
 File: ./Drawings/MatlabFigures/max_mach.eps Graphic file (type eps)
 
 <./Drawings/MatlabFigures/max_mach.eps>
@@ -1436,16 +1430,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8]
+[7]
 File: ./Drawings/MatlabFigures/max_alt_first_try.eps Graphic file (type eps)
- <./Drawings/MatlabFigures/max_alt_first_try.eps>)
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 22.83148pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[9]) (./rolling_momment_coef.tex
+ <./Drawings/MatlabFigures/max_alt_first_try.eps>))
+(./rolling_momment_coef.tex
 File: ./Drawings/CameraUploads/model.jpg Graphic file (type QTm)
  <use  "./Drawings/CameraUploads/model.jpg" >
 
@@ -1454,14 +1442,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10]
+[8]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 22.83148pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11]
+[9]
 File: ./Drawings/MatlabFigures/datafit_clp1.eps Graphic file (type eps)
  <./Drawings/MatlabFigures/datafit_clp1.eps>
 LaTeX Font Info:    Calculating math sizes for size <5.59998> on input line 133
@@ -1526,7 +1514,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12]
+[10]
 File: ./Drawings/MatlabFigures/v_n_graph.eps Graphic file (type eps)
  <./Drawings/MatlabFigures/v_n_graph.eps>
 
@@ -1535,7 +1523,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13]
+[11]
 File: ./Drawings/MatlabFigures/v_wmega2_graph.eps Graphic file (type eps)
  <./Drawings/MatlabFigures/v_wmega2_graph.eps>
 
@@ -1544,20 +1532,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14]) (./stability_control.tex
+[12]) (./stability_control.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 22.83148pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15]
-
-LaTeX Warning: Reference `full_longitudinal3' on page 16 undefined on input lin
-e 52.
-
-
-Overfull \hbox (11.3663pt too wide) in paragraph at lines 56--58
+[13]
+Overfull \hbox (11.3663pt too wide) in paragraph at lines 57--59
 []\EU1/PalatinoLinotype(0)/m/n/10 So we end up with the following set of equati
 ons which we solve to compute the trimmed state. 
  []
@@ -1568,7 +1551,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16]
+[14]
 File: ./Drawings/MatlabFigures/equilibrium_conditions.eps Graphic file (type ep
 s)
  <./Drawings/MatlabFigures/equilibrium_conditions.eps>
@@ -1581,14 +1564,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[17]
+[15]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 22.83148pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18]
+[16]
 File: ./Drawings/MatlabFigures/linear_stability.eps Graphic file (type eps)
  <./Drawings/MatlabFigures/linear_stability.eps>
 
@@ -1597,8 +1580,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[19]
-Overfull \hbox (6.08372pt too wide) in paragraph at lines 205--207
+[17]
+Overfull \hbox (6.08372pt too wide) in paragraph at lines 208--210
 []\EU1/PalatinoLinotype(0)/m/n/10 Finally having computed the eigenvalues and t
 he corresponding eigenvectors, the oscillation modes
  []
@@ -1611,9 +1594,30 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20]
+[18]
 File: ./Drawings/MatlabFigures/nonlinear2.eps Graphic file (type eps)
  <./Drawings/MatlabFigures/nonlinear2.eps>
+File: ./Drawings/MatlabFigures/looping1.eps Graphic file (type eps)
+
+<./Drawings/MatlabFigures/looping1.eps>
+File: ./Drawings/MatlabFigures/looping_status1.eps Graphic file (type eps)
+
+<./Drawings/MatlabFigures/looping_status1.eps>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.83148pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[19])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.83148pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[20] (./report.bbl) (./appendix.tex
+(../Project3/logfiles/eigenvalue_analysis.log
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 22.83148pt.
@@ -1621,11 +1625,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [21]
-File: ./Drawings/MatlabFigures/looping1.eps Graphic file (type eps)
- <./Drawings/MatlabFigures/looping1.eps>
-File: ./Drawings/MatlabFigures/looping_status1.eps Graphic file (type eps)
-
-<./Drawings/MatlabFigures/looping_status1.eps>
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 22.83148pt.
@@ -1639,49 +1638,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[23]) (./appendix.tex (../Project3/logfiles/eigenvalue_analysis.log
+[23]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 22.83148pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24]
+[24]))
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 22.83148pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 22.83148pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[26]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 22.83148pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[27]))
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 22.83148pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[28] (./report.bbl)
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 22.83148pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[29] (./report.aux)
+[25] (./report.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 3.25002pt have occurred.
@@ -1690,19 +1661,16 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 23185 strings out of 494893
- 432439 string characters out of 6167768
- 741106 words of memory out of 5000000
- 25967 multiletter control sequences out of 15000+600000
+ 23184 strings out of 494893
+ 432408 string characters out of 6167768
+ 740106 words of memory out of 5000000
+ 25966 multiletter control sequences out of 15000+600000
  25258 words of font info for 158 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  42i,18n,79p,10466b,1656s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.pdf (30 pages).
+Output written on report.pdf (26 pages).

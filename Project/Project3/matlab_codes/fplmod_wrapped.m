@@ -8,7 +8,7 @@ function [xdot_ode] = fplmod_wrapped(tval, xstate)
 %     xstate: u, w, q, theta, x, h, m, de, dp
 % OUTPUT:
 %     xdot_ode: udot, wdot, qdot, thetadot, xdot, hdot, mdot
-
+%
 % The function can also add to global lists the output variables gathered
 % from fplmod, so that they may later be processed by the caller.
 
